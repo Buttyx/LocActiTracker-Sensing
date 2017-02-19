@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context="ch.fhnw.locactitrackermobile.MainActivity"
+    tools:deviceIds="wear">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:text="Locactitracker"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:layout_height="50dp"
+            android:background="@color/circular_button_pressed"
+            android:paddingTop="20dp"
+            android:textColor="@color/ambient_mode_text" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_below="@id/header"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Recognition"
+            android:id="@+id/button_prediction"
+            android:textSize="9dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="20dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Training"
+                android:id="@+id/button_training"
+                android:textSize="9dp"
+                android:layout_toRightOf="@id/button_prediction"
+                android:layout_below="@id/text"
+                />
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.wearable.view.BoxInsetLayout>

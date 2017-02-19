@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Locactitracker</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="welcome">Welcome to the Locactitracker!</string>
+    <string name="action_settings">Settings</string>
+    <string name="not_available">Not Available</string>
+    <string name="lon_label">Longitude:</string>
+    <string name="speed_label">Speed:</string>
+    <string name="activity_label">Activity:</string>
+    <string name="timestamp_label">Time:</string>
+    <string name="speed_limit">Limit: %1$d mph</string>
+
+    <string name="gps_permission">App requires location permission to function, tap GPS icon.</string>
+    <string name="gps_connecting">Acquiring GPS Fix.</string>
+    <string name="enable_disable_gps_label">Enable Location Permission?</string>
+    <string name="gps_not_available">No GPS on device. Will use phone GPS when available.</string>
+    <string name="ok">OK</string>
+</resources>

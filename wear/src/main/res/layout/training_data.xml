@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context="ch.fhnw.locactitrackermobile.activity.TrainingDataActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:padding="5dp"
+        app:layout_box="all">
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="X: Y: Z: Timestamp:"
+    android:textSize="5pt"
+    android:id="@+id/activityTrace"
+    android:layout_gravity="center|center_vertical" />
+
+    <Button
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="10sp"
+        android:textAllCaps="false"
+        android:id="@+id/button_collect_exit"
+        android:layout_gravity="bottom|left" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/button_start_training"
+        android:layout_gravity="bottom|right"
+        android:visibility="visible"
+        android:backgroundTint="@color/green" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Stop"
+            android:layout_gravity="bottom|right"
+            android:id="@+id/button_stop_training"
+            android:backgroundTint="@color/dark_red" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:text="Activity"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:id="@+id/button_choose_activity"
+        android:layout_gravity="top|center"
+        android:backgroundTint="@color/blue"
+        android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+</android.support.wearable.view.BoxInsetLayout>

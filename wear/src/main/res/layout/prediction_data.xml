@@ -1,0 +1,47 @@
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context="ch.fhnw.locactitrackermobile.activity.RecognitionDataActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:padding="5dp"
+        app:layout_box="all">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/button_stop"
+            android:layout_gravity="bottom|center"
+            android:backgroundTint="@color/dark_red" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/button_start"
+            android:layout_gravity="bottom|center"
+            android:backgroundTint="@color/green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ready to start recognition"
+            android:id="@+id/activityTrace"
+            android:textSize="12dp"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="center|center_vertical"/>
+
+    </FrameLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
+
+
